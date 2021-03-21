@@ -1,0 +1,124 @@
+.news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-cards {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    /* overflow: auto; */
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.news-cards_active {
+    display: grid;
+}
+
+@media screen and (max-width: 800px) {
+    .news-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .news-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .news-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+.news-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+}
+
+.news-card__title {
+    margin: 0;
+    text-align: center;
+}
+
+.news-card__autor {
+    margin: 0;
+    text-align: center;
+}
+
+.news-card__date {
+    margin: 0;
+    text-align: center;
+}
+
+.news-card__link {
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.news-card__status {
+    margin: 0;
+    text-align: center;
+}
+
+.news-button {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    margin: 20px 0 20px 0;
+}
+
+.news-button:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.news-button:active {
+    opacity: .5;
+    outline: none;
+}
+
+.news-button:focus {
+    outline: none;
+}
+
+.news-button-close {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    margin: 20px 0 20px 0;
+}
+
+.news-button-close:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.news-button-close:active {
+    opacity: .5;
+    outline: none;
+}
+
+.news-button-close:focus {
+    outline: none;
+}
